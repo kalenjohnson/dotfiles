@@ -1,0 +1,146 @@
+@import "mocha.css";
+
+* {
+    font-family: "JetBrainsMono Nerd Font, monospace, sans-serif";
+    font-weight: bold;
+    font-size: 16px;
+}
+
+window#waybar {
+    background-color: @crust;
+    color: @overlay0;
+    transition-property: background-color;
+    transition-duration: 0.1s;
+}
+
+tooltip {
+    background: @surface1;
+    border: 1px solid @surface2;
+    border-radius: 2px;
+    padding: 20px;
+}
+
+#workspaces {
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+button {
+    min-width: 28px;
+    box-shadow: inset 0 -3px transparent;
+    border: none;
+    border-radius: 0;
+}
+
+button:hover {
+    color: @mauve;
+    border-top: 2px solid @mauve;
+
+    /* These are necessary */
+    box-shadow: inherit;
+    text-shadow: inherit;
+    background: inherit;
+}
+
+#workspaces {
+    margin-right: 6px;
+}
+#workspaces button {
+    border-bottom: 2px solid transparent;
+    transition: background-color 500ms ease;
+}
+
+#workspaces button.focused {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: @rosewater;
+    border-bottom-color: @rosewater;
+}
+#workspaces button.active {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: @mauve;
+    border-bottom: 2px solid @mauve;
+}
+
+#cpu,
+#clock,
+#battery,
+#pulseaudio,
+#custom-weather,
+#network,
+#bluetooth,
+#temperature,
+#backlight,
+#memory {
+    padding: 0 5px;
+    margin-left: 5px;
+}
+
+#network,
+#bluetooth {
+    padding: 0 15px;
+}
+
+#clock:hover,
+#battery:hover,
+#pulseaudio:hover,
+#network:hover,
+#bluetooth:hover,
+#custom-weather:hover,
+#temperature:hover,
+#workspaces:hover,
+#backlight:hover,
+#cpu:hover,
+#memory:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+#tray {
+    padding: 0 16px;
+}
+
+/* Center */
+#clock {
+    color: @lavender;
+    border-bottom: 2px solid @lavender;
+}
+
+#clock.date {
+    color: @blue;
+    border-bottom: 2px solid @blue;
+}
+
+/* Right side */
+.modules-right > *:nth-child(3n+1) > * {
+    color: @sapphire;
+    border-bottom: 2px solid @sapphire;
+}
+
+.modules-right > *:nth-child(3n+2) > * {
+    color: @green;
+    border-bottom: 2px solid @green;
+}
+
+.modules-right > *:nth-child(3n+3) > * {
+    color: @flamingo;
+    border-bottom: 2px solid @flamingo;
+}
+
+#tray {
+    border-bottom: 2px solid @crust;
+}
+
+#power-profiles-daemon {
+    padding-left: 8px;
+}
+
+#battery.warning {
+    color: @peach;
+}
+
+#battery.critical {
+    color: @red;
+}
+
+#temperature.critical {
+    color: @flamingo;
+}
