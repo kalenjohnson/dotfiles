@@ -71,7 +71,7 @@ button:hover {
 #temperature,
 #backlight,
 #memory {
-    padding: 0 5px;
+    padding: 0 8px;
     margin-left: 5px;
 }
 
@@ -123,6 +123,11 @@ button:hover {
 .modules-right > *:nth-child(3n+3) > * {
     color: @flamingo;
     border-bottom: 2px solid @flamingo;
+}
+
+.modules-right > * > #network.disconnected {
+    color: @maroon;
+    border-bottom: 2px solid @maroon;
 }
 
 #tray {

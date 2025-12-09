@@ -56,7 +56,7 @@
 		"format-wifi": "{icon}",
 		"format-ethernet": "",
 		"format-linked": "󰄡",
-		"format-disconnected": "",
+		"format-disconnected": "\uDB82\uDD1F",
 		"tooltip-format": "{essid} ({signalStrength}%) - {gwaddr}",
 		"tooltip-format-ethernet": "{ifname} - {gwaddr}",
 		"tooltip-format-disconnected": "Disconnected",
