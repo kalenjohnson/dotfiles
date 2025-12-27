@@ -25,7 +25,10 @@
 		"format": "{}"
 	},
 	"hyprland/workspaces": {
-		"sort-by": "name"
+		"sort-by": "name",
+		"format-icons": {
+			"1": "一"
+		}
 	},
     "custom/weather": {
         "format": "{}°",

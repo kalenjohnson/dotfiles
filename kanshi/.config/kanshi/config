@@ -1,0 +1,22 @@
+profile undocked {
+    output eDP-1 enable
+
+    exec hyprctl dispatch movetoworkspace 1,class:firefox 
+    exec hyprctl dispatch movetoworkspace 2,class:kitty
+    exec hyprctl dispatch movetoworkspace 3,class:jetbrains-phpstorm
+    exec hyprctl dispatch movetoworkspace 4,class:org.mozilla.Thunderbird
+    exec hyprctl dispatch movetoworkspace 5,class:Slack
+    exec hyprctl dispatch movetoworkspace 5,class:WebApp-WhatsApp2961
+}
+
+profile docked {
+    output eDP-1 enable
+    output "Microstep MSI MD272UPH PB1HJ35600012" enable
+
+    exec hyprctl dispatch movetoworkspace 1,class:firefox
+    exec hyprctl dispatch movetoworkspace 1,class:kitty
+    exec hyprctl dispatch movetoworkspace 1,class:jetbrains-phpstorm
+    exec hyprctl dispatch movetoworkspace 2,class:Slack
+    exec hyprctl dispatch movetoworkspace 2,class:WebApp-WhatsApp2961
+    exec hyprctl dispatch movetoworkspace 2,class:org.mozilla.Thunderbird
+}

@@ -7,14 +7,14 @@
 }
 
 window#waybar {
-    background-color: @crust;
+    background: linear-gradient(180deg,rgba(24, 25, 38, 1) 0%, rgba(0, 0, 0, 0) 100%);
     color: @overlay0;
     transition-property: background-color;
     transition-duration: 0.1s;
 }
 
 tooltip {
-    background: @surface1;
+    background-color: @surface1;
     border: 1px solid @surface2;
     border-radius: 2px;
     padding: 20px;
@@ -22,7 +22,7 @@ tooltip {
 
 #workspaces {
     margin: 0;
-    background-color: rgba(255, 255, 255, 0.08);
+    background-color: transparent;
 }
 
 button {
@@ -43,22 +43,29 @@ button:hover {
 }
 
 #workspaces {
+    background-color: transparent;
     margin-right: 6px;
 }
+#workspaces:hover {
+    background-color: transparent;
+}
+
 #workspaces button {
-    border-bottom: 2px solid transparent;
+    background: none;
+    background-color: transparent;
+    border-top: 2px solid transparent;
     transition: background-color 500ms ease;
 }
 
 #workspaces button.focused {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: transparent;
     color: @rosewater;
-    border-bottom-color: @rosewater;
+    border-top-color: @rosewater;
 }
 #workspaces button.active {
-    background-color: rgba(0, 0, 0, 0.3);
+    background: linear-gradient(180deg,rgb(36, 39, 58) 0%, rgba(0, 0, 0, 0) 100%);
     color: @mauve;
-    border-bottom: 2px solid @mauve;
+    border-top: 2px solid @mauve;
 }
 
 #cpu,
@@ -101,37 +108,37 @@ button:hover {
 /* Center */
 #clock {
     color: @lavender;
-    border-bottom: 2px solid @lavender;
+    border-top: 2px solid @lavender;
 }
 
 #clock.date {
     color: @blue;
-    border-bottom: 2px solid @blue;
+    border-top: 2px solid @blue;
 }
 
 /* Right side */
 .modules-right > *:nth-child(3n+1) > * {
     color: @sapphire;
-    border-bottom: 2px solid @sapphire;
+    border-top: 2px solid @sapphire;
 }
 
 .modules-right > *:nth-child(3n+2) > * {
     color: @green;
-    border-bottom: 2px solid @green;
+    border-top: 2px solid @green;
 }
 
 .modules-right > *:nth-child(3n+3) > * {
     color: @flamingo;
-    border-bottom: 2px solid @flamingo;
+    border-top: 2px solid @flamingo;
 }
 
 .modules-right > * > #network.disconnected {
     color: @maroon;
-    border-bottom: 2px solid @maroon;
+    border-top: 2px solid @maroon;
 }
 
 #tray {
-    border-bottom: 2px solid @crust;
+    border-top: 2px solid @crust;
 }
 
 #power-profiles-daemon {
